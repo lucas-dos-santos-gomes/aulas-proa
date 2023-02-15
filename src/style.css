@@ -2,4 +2,89 @@ body {
     font-family: verdana;
     color: darkred;
     background-color: silver;
+    background-image: url(./img/fundo-aurora-boreal.jpg);
+    background-repeat: repeat; /* define se a imagem repete */
+    background-position: center bottom; /* posições x e y da imagem */
+    background-attachment: fixed; /* fixa a posição da imagem */
+    background-size: cover; /* adapta o tamanho da imagem para a tela ao todo */
+}
+
+h1,h3 {
+    text-align: center;
+}
+
+h1 {
+    background-color: yellow;
+}
+
+h3 {
+    background-color: #FFF;
+    color: #d46060;
+}
+
+.titulo-diferente {
+    text-align: end;
+    color: #00FF00;
+}
+
+h4, h5, h6 {
+    background-color: #0FF;
+    color: #0000FF;
+
+    width: 50%;
+    font-size: 1.2em;
+}
+
+h4 {
+    border: 5px;
+    border-style: solid;
+    border-color: #0E0328;
+    margin: 50px;
+    color: #F00;
+}
+
+h5 {
+    border: 2px solid #f00;
+    margin-left: 150px;
+}
+
+h6 {
+    border-top: 5px double #000;
+    border-right: 3px outset rgb(255, 106, 0);
+    border-bottom: 3px dotted #090;
+    border-left: 3px groove #0E0328;
+    margin: 10px 0 30px 20px;
+}
+
+.img-pequena {
+    width: 100px;
+}
+
+.img-media {
+    width: 200px;
+}
+
+.img-grande {
+    width: 300px;
+}
+
+.img-gigante {
+    width: 500px;
+}
+
+table {
+    width: 450px;
+    height: 350px;
+    border: 3px solid #000;
+    margin: auto;
+}
+
+th,td {
+    width: 150px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+li {
+    color: #FFF;
 }
