@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+}
+
+main {
+    width: 60vw;
+    height: 90vh;
+    margin: 5vh auto;
+}
+
+#cabecalho1 {
+    background-color: #000;
+    color: #FFF;
+    width: 100%;
+    height: 20%;
+}
+
+header h1 {
+    padding: 40px 0 0;
+    text-align: center;
+}
+
+#nav1 {
+    background-color: #0000FF;
+    color: #FFF;
+    width: 100%;
+    height: 5%;
+}
+
+#nav2 {
+    float: left;
+    background-color: rgb(190, 190, 72);
+    text-align: center;
+
+    width: 20%;
+    height: 70%;
+}
+
+section {
+    float: left;
+    background-color: rgb(223, 121, 138);
+    text-align: center;
+    
+    width: 60%;
+    height: 70%;
+}
+
+section #cabecalho2 {
+    background-color: #FFF;
+    width: 95%;
+    margin: auto;
+}
+
+section #div1 {
+    background-color: rgb(138, 64, 21);
+    color: #FFF;
+
+    width: 95%;
+    height: 30%;
+    margin: 2% auto;
+}
+
+section p {
+    background-color: #b038ce;
+    text-align: left;
+
+    width: 95%;
+    height: 20%;
+    margin: auto;
+}
+
+section .container {
+    float: left;
+    background-color: #5f5b5b;
+    color: #FFF;
+
+    width: 30%;
+    height: 28%;
+}
+
+section .container1 {
+    margin: 2% 1.25% 2% 2.5%;
+}
+
+section .container2 {
+    margin: 2% 1.25% 2% 1.25%;
+}
+
+section .container3 {
+    margin: 2% 2.5% 2% 1.25%;
+}
+
+aside {
+    float: left;
+    background-color: rgb(140, 9, 145);
+    color: #FFA;
+
+    text-align: center;
+    width: 20%;
+    height: 70%;
+}
+
+footer {
+    clear: left;
+    background-color: #000;
+    color: #FFF;
+
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}

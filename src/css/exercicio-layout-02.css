@@ -1,0 +1,91 @@
+.fundo {
+    width: 60vw;
+    height: 90vh;
+    margin: 5vh auto;
+    background-color: #000;
+}
+
+img {
+    position: absolute;
+    z-index: 1;
+    left: 62%;
+    top: 62%;
+
+    width: 10%;
+}
+
+.camada1 {
+    background-color: aquamarine;
+    text-align: center;
+
+    width: 100%;
+    height: 15%;
+}
+
+h1 {
+    padding: 25px 0 0;
+}
+
+.camada2 {
+    position: relative;
+    float: left;
+
+    width: 15%;
+    height: 80%;
+
+    background-color: rgb(100, 100, 100);
+}
+
+.camada3 {
+    position: relative;
+    float: left;
+
+    width: 65%;
+    height: 80%;
+    
+    background-color: rgb(165, 156, 156);
+}
+
+.camada4 {
+    position: relative;
+    float: left;
+
+    width: 20%;
+    height: 20%;
+    
+    background-color: #FFF;
+    border: 2px solid rgb(100, 100, 100);
+    border-bottom: 1px;
+    box-sizing: border-box;
+}
+
+.camada5 {
+    position: relative;
+    float: left;
+
+    width: 20%;
+    height: 20%;
+    
+    background-color: #FFF;
+    border: 2px solid rgb(100, 100, 100);
+    box-sizing: border-box;
+}
+
+.camada6 {
+    position: relative;
+    float: left;
+
+    width: 20%;
+    height: 40%;
+    
+    background-color: rgb(100, 100, 100);
+}
+.camada7 {
+    position: relative;
+    float: left;
+
+    width: 100%;
+    height: 5%;
+
+    background-color: aquamarine;
+}

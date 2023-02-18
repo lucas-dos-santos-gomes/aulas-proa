@@ -1,0 +1,63 @@
+#fundo {
+    position: relative;
+
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    
+    background-color: rgb(223, 88, 167);
+}
+
+#camada1 {
+    position: relative;
+    float: left;
+    text-align: center;
+    
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    
+    background-color: yellow;
+    border: 2px solid #333;
+    
+}
+
+#camada2 {
+    position: relative;
+    float: left;
+    text-align: center;
+    
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    
+    background-color: rgb(8, 107, 8);
+    border: 2px solid #ff107f;
+}
+
+#camada3 {
+    position: relative;
+    clear: left;
+    float: left;
+    text-align: center;
+    
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    
+    background-color: rgb(8, 180, 192);
+    border: 2px solid #000000;
+}
+
+#camada4 {
+    position: relative;
+    float: left;
+    text-align: center;
+    
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    
+    background-color: rgb(176, 48, 6);
+    border: 2px solid #000000;
+}
