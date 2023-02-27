@@ -11,11 +11,16 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url(./img/guitarra_fundo_body.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .container {
     width: 90%;
-    height: 500vh;
     margin: auto;
-    background-color: #00F;
 }
 
 .cabecalho {
@@ -71,7 +76,7 @@ html {
     box-sizing: border-box;
 }
 
-.principal_artigo_sobre h2 {
+h2 {
     font-size: 3rem;
     margin-bottom: 5%;
 }
@@ -132,4 +137,143 @@ html {
 .principal_instrumentos_lista_itens .valor {
     color: #F00;
     font-weight: bold;
+}
+
+.principal_endereco {
+    width: 100%;
+    height: 60vh;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    border-top: 20px solid rgb(224, 71, 71);
+    background-color: rgb(153, 29, 25);
+}
+
+.principal_endereco_mapa {
+    float: left;
+    width: 47%;
+    height: 100%;
+    margin-right: 3%;
+}
+
+.principal_endereco_texto {
+    float: left;
+    background-color: rgb(138, 94, 94);
+    color: #FFF;
+    width: 47%;
+    height: 100%;
+    padding: 2%;
+    margin-left: 3%;
+    box-sizing: border-box;
+}
+
+.principal_endereco_texto p {
+    font-size: 1.8rem;
+}
+
+.principal_formulario {
+    width: 100%;
+    height: 60vh;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+.principal_formulario form {
+    float: left;
+    width: 47%;
+    height: 100%;
+    margin-right: 3%;
+    font-size: 1.6rem;
+}
+
+.principal_formulario form input {
+    display: block;
+    width: 95%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.principal_formulario_itens:hover {
+    cursor: pointer;
+}
+
+.principal_formulario form textarea {
+    width: 95%;
+    padding: 5px 10px;
+    margin: 10px 0 20px;
+    resize: none;
+
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.principal_formulario_redes-sociais {
+    float: left;
+    width: 47%;
+    height: 100%;
+    margin-left: 3%;
+    box-sizing: border-box;
+    padding: 15vh 8%;
+}
+
+.principal_formulario_redes-sociais h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.lista-redes-sociais li {
+    float: left;
+    width: 20%;
+    margin-right: 20%;
+}
+
+.lista-redes-sociais li:last-child {
+    margin: 0;
+}
+
+.lista-redes-sociais li img {
+    width: 100%;
+}
+
+.rodape {
+    width: 100%;
+    height: 20vh;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+}
+
+.rodape h4 {
+    font-size: 1.8rem;
+}
+
+.rodape p {
+    font-size: 1.6rem;
+}
+
+.rodape_lista-redes-sociais {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    margin: 10px auto 0;
+}
+
+.rodape_lista-redes-sociais li {
+    float: left;
+    width: 15%;
+    margin: 0 9% 0;
+}
+
+.rodape_lista-redes-sociais li img {
+    width: 100%;
 }

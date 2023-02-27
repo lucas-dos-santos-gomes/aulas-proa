@@ -33,6 +33,8 @@
                     </section>
                 </article>
 
+                <a name="instrumentos" id="instrumentos"></a>
+
                 <section class="principal_instrumentos">
                     <ul class="principal_instrumentos_lista">
                         <li class="principal_instrumentos_lista_itens">
@@ -65,22 +67,87 @@
                             <p>Clássico Nylon Acústico</p>
                             <p>Natural Brilhante</p>
                             <p class="valor">R$ 989,50</p>
+                            <a name="endereco" id="endereco"></a>
                         </li>
                     </ul>
                 </section>
 
                 <section class="principal_endereco">
-                    <div></div>
+                    <div class="principal_endereco_mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.122705819265!2d-46.69400408542296!3d-23.5280886662486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1677469734605!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
 
-                    <div class="principal_endereco_texto"></div>
+                    <div class="principal_endereco_texto">
+                        <h2>Nossa Loja - Instrumentos Musicais</h2>
+                        <p>Está situada na Rua Tito, 54 - Pompéia, próximo ao teatro Cacilda Becker, em uma construção do século XIX, numa área de 500m2, com uma variada gama de instrumentos, em um ambiente ab=gradável para toda a família!</p>
+                    </div>
                 </section>
 
-                <section class="principal_formulario">
+                <a name="contato" id="contato"></a>
 
+                <section class="principal_formulario">
+                    <form>
+                        <label class="principal_formulario_itens" for="nome">Entre com o seu nome:</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome aqui:" required/>
+
+                        <label class="principal_formulario_itens" for="email">Entre com o seu e-mail:</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail aqui:" required/>
+                        
+                        <textarea rows="7" placeholder="Faça seu pedido por aqui:" required></textarea>
+
+                        <input class="principal_formulario_itens" type="submit"/>
+                    </form>
+
+                    <div class="principal_formulario_redes-sociais">
+                        <h3>Acesse também nossas redes sociais:</h3>
+                        <ul class="lista-redes-sociais">
+                            <li>
+                                <a href="https://wa.me/+5511991363982" target="_blank">
+                                    <img src="./src/img/whats_green.png" alt="Logo Whatsapp"/>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.instagram.com/instituto.proa/" target="_blank">
+                                    <img src="./src/img/insta.png" alt="Logo instagram"/>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://pt-br.facebook.com/instituto.proa/" target="_blank">
+                                    <img src="./src/img/facebook.png" alt="Logo Facebook"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </main>
 
-            <footer></footer>
+            <footer class="rodape">
+                <h4>Nossa Loja - Instrumentos Musicais</h4>
+                <p>Rua Tito, 54 - Lapa</p>
+                <p>São Paulo - Brasil</p>
+
+                <ul class="rodape_lista-redes-sociais">
+                    <li>
+                        <a href="https://wa.me/+5511991363982" target="_blank">
+                            <img src="./src/img/whats_green.png" alt="Logo Whatsapp"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.instagram.com/instituto.proa/" target="_blank">
+                            <img src="./src/img/insta.png" alt="Logo instagram"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://pt-br.facebook.com/instituto.proa/" target="_blank">
+                            <img src="./src/img/facebook.png" alt="Logo Facebook"/>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
         </div>
     </body>
 </html>
