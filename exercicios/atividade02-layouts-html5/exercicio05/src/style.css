@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    height: 500vh;
+    margin: auto;
+    background-color: #00F;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 35vh;
+    background-image: url(./img/guitarras_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecalho_navegacao {
+    position: absolute;
+    top: 25%;
+    left: 50vw;
+    display: inline-block;
+    background-color: #FFF;
+}
+
+.cabecalho_navegacao_links {
+    display: inline-block;
+    color: #000;
+    font-size: 2rem;
+    margin: 10px 15px;
+    transition: 100ms;
+}
+
+.cabecalho_navegacao_links:hover {
+    text-decoration: underline;
+}
+
+.principal {
+    width: 100%;
+}
+
+.principal_artigo {
+    background-color: #F00;
+    width: 100%;
+    height: 65vh;
+    padding: 30px 50px;
+    border-top: 20px solid rgb(224, 71, 71);
+    border-bottom: 20px solid rgb(224, 71, 71);
+    box-sizing: border-box;
+}
+
+.principal_artigo_sobre {
+    float: left;
+    background-color: rgb(138, 94, 94);
+    color: #FFF;
+    width: 47%;
+    height: 100%;
+    padding: 2%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.principal_artigo_sobre h2 {
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.principal_artigo_sobre p {
+    font-size: 1.8rem;
+}
+
+.principal_artigo_imagem {
+    float: left;
+    width: 47%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+.principal_artigo_imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.principal_instrumentos {
+    width: 100%;
+    height: 60vh;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgb(103, 179, 223);
+}
+
+.principal_instrumentos_lista {
+    width: 100%;
+    height: 100%;
+}
+
+.principal_instrumentos_lista_itens {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+
+    border: 4px solid #000;
+    border-radius: 20px;
+    
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.principal_instrumentos_lista_itens:first-child {
+    margin-left: 0;
+}
+
+.principal_instrumentos_lista_itens img {
+    height: 30%;
+    margin: 30% 0 10%;
+}
+
+.principal_instrumentos_lista_itens .valor {
+    color: #F00;
+    font-weight: bold;
+}
