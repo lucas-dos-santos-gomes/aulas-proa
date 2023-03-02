@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #C5DBF2;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+}
+
+.container1, .container2 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header .container1 {
+    justify-content: space-between;
+}
+
+header .container2 {
+    justify-content: flex-end;
+}
+
+header .container1 nav {
+    display: flex;
+    justify-content: space-around;
+
+    width: 60%;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6E6868;
+}
+
+header .container1 nav a:hover {
+    color: #00F;
+    text-decoration: underline;
+}
+
+header .container2 .botao_conectar {
+    padding: 19px;
+    margin: 0 10px 0 20px;
+    border: 1px solid #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .container2 .botao_conectar:hover {
+    font-weight: bold;
+    border: 1px solid #6E6868;
+    color: #6E6868;
+}
+
+header .container2 .botao_cadastrar {
+    padding: 20px;
+    margin: 0 20px 0 10px;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #12615E;
+    color: #FFF;
+}
+header .container2 .botao_cadastrar:hover {
+    opacity: 0.8;
+}
+
+header .container2 img:hover, header .container2 div:hover {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+}
+
+main .container {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main .container section {
+    box-sizing: border-box;
+    padding-top: 25vh;
+    width: 50%;
+    height: 100%;
+}
+
+main .container .informacoes {
+    padding-right: 20px;
+}
+
+main .container .informacoes h1 {
+    color: #6E6868;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+main .container .informacoes p {
+    font-size: 2rem;
+    color: #887E7E;
+}
+
+main .container .botao_saiba-mais {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #12615E;
+    color: #FFF;
+}
+
+main .container .botao_saiba-mais:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.propaganda_big-mood {
+    box-sizing: border-box;
+    width: 85%;
+    height: 70%;
+
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #F7D5C5;
+}
+
+.propaganda_big-mood_botoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.propaganda_big-mood h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #e26979;
+}
+
+.propaganda_big-mood_produto {
+    padding: 30px;
+}
+
+.propaganda_shopping-cart {
+    position: absolute;
+    bottom: 8%;
+    right: 12vw;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FFF;
+    width: 250px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.propaganda_shopping-cart_titulo {
+    width: 100%;
+    padding: 5px;
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.propaganda_shopping-cart_botao {
+    align-self: center;
+    padding: 10px;
+    margin: 10px 0 15px;
+    font-size: 1.4rem;
+    background-color: #12615E;
+    color: #FFF;
+}
+
+.propaganda_shopping-cart_botao:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
