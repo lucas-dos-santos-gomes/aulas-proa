@@ -13,7 +13,7 @@ main {
     width: 80%;
     height: 90vh;
     margin: 5vh auto;
-    background-color: #CCC;
+    min-width: 180px;
 }
 
 .cabecalho {
@@ -84,20 +84,64 @@ main {
 }
 
 .principal_centro {
+    box-sizing: border-box;
+    padding: 10px;
     width: 60%;
     height: 100%;
+    color: #000;
 }
 
 .principal_centro_artigo {
     width: 100%;
-    height: 70%;
-    background-color: #FFF;
+    height: 60%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.principal_centro_artigo h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.principal_centro_artigo_tablet {
+    background-image: url(../../exercicios/atividade02-layouts-html5/exercicio04/src/img/tablet.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 45%;
+    margin: 10px 0;
+}
+
+.principal_centro_artigo p {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #66F;
+    color: #FFF;
 }
 
 .principal_centro_imagens {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+
     width: 100%;
-    height: 30%;
-    background-color: #66F;
+    height: calc(40% - 10px);
+    box-sizing: border-box;
+}
+
+.principal_centro_imagens .imagem-grid-1 {
+    background-image: url(../../exercicios/atividade02-layouts-html5/exercicio04/src/img/rodovia.jpg);
+    background-size: cover;
+}
+
+.principal_centro_imagens .imagem-grid-2 {
+    background-image: url(../../exercicios/atividade02-layouts-html5/exercicio04/src/img/paisagem-artico.jpg);
+    background-size: cover;
+}
+
+.principal_centro_imagens .imagem-grid-3 {
+    background-image: url(../../src/img/lua.jpg);
+    background-size: cover;
 }
 
 .principal_propaganda {
@@ -118,4 +162,91 @@ main {
     width: 100%;
     height: 10%;
     background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 95vw;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+
+    .cabecalho {
+        height: 12.5%;
+    }
+
+    .cabecalho_menu-superior {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        height: 10%;
+    }
+
+    .principal_menu-lateral, .principal_propaganda {
+        display: none;
+    }
+
+    .principal_centro {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .principal_centro_artigo {
+        height: 62%;
+    }
+
+    .rodape {
+        height: 7.5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        height: auto;
+    }
+
+    .cabecalho {
+        height: 15vh;
+    }
+
+    .cabecalho_menu-superior {
+        display: grid;
+        grid-template-columns: auto;
+        height: auto;
+    }
+
+    .cabecalho_menu-superior a {
+        font-weight: normal;
+        padding: 10px 0;
+        border-top: 2px solid #FFF;
+        box-sizing: border-box;
+    }
+
+    .principal_centro {
+        height: auto;
+    }
+
+    .principal_centro_artigo {
+        height: auto;
+    }
+
+    .principal_centro_artigo h2 {
+        margin: 5px 0 15px;
+    }
+
+    .principal_centro_artigo_tablet {
+        display: none;
+    }
+
+    .principal_centro_imagens {
+        grid-template-columns: auto;
+    }
+
+    .principal_centro_imagens div {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .rodape {
+        padding: 3vh 0;
+    }
 }
