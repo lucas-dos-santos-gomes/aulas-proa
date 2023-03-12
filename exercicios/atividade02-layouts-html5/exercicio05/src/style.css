@@ -24,23 +24,28 @@ body {
 }
 
 .cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
     width: 100%;
     height: 35vh;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
     background-image: url(./img/guitarras_header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .cabecalho_navegacao {
-    position: absolute;
-    top: 25%;
-    left: 50vw;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: #FFF;
 }
 
 .cabecalho_navegacao_links {
-    display: inline-block;
     color: #000;
     font-size: 2rem;
     margin: 10px 15px;
@@ -56,6 +61,9 @@ body {
 }
 
 .principal_artigo {
+    display: flex;
+    justify-content: space-between;
+
     background-color: #F00;
     width: 100%;
     height: 65vh;
@@ -66,7 +74,6 @@ body {
 }
 
 .principal_artigo_sobre {
-    float: left;
     background-color: rgb(138, 94, 94);
     color: #FFF;
     width: 47%;
@@ -81,15 +88,15 @@ h2 {
     margin-bottom: 5%;
 }
 
-.principal_artigo_sobre p {
+.principal_artigo_sobre_paragrafo {
+    height: 70%;
     font-size: 1.8rem;
+    overflow-y: auto;
 }
 
 .principal_artigo_imagem {
-    float: left;
     width: 47%;
     height: 100%;
-    margin-left: 3%;
 }
 
 .principal_artigo_imagem img {
@@ -99,22 +106,24 @@ h2 {
 
 .principal_instrumentos {
     width: 100%;
-    height: 60vh;
-    padding: 30px;
+    padding: 30px 30px 0;
     box-sizing: border-box;
     background-color: rgb(103, 179, 223);
 }
 
 .principal_instrumentos_lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     width: 100%;
     height: 100%;
 }
 
 .principal_instrumentos_lista_itens {
-    display: inline-block;
-    width: 20%;
-    height: 100%;
-    margin-left: 5%;
+    margin: 0 15px 30px;
+    width: 220px;
+    height: 55vh;
 
     border: 4px solid #000;
     border-radius: 20px;
@@ -123,10 +132,6 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     background-color: #FFF;
-}
-
-.principal_instrumentos_lista_itens:first-child {
-    margin-left: 0;
 }
 
 .principal_instrumentos_lista_itens img {
@@ -140,29 +145,30 @@ h2 {
 }
 
 .principal_endereco {
+    display: flex;
+    justify-content: space-between;
+
     width: 100%;
     height: 60vh;
     padding: 30px 50px;
     box-sizing: border-box;
     border-top: 20px solid rgb(224, 71, 71);
+    border-bottom: 20px solid rgb(224, 71, 71);
     background-color: rgb(153, 29, 25);
 }
 
 .principal_endereco_mapa {
-    float: left;
     width: 47%;
     height: 100%;
     margin-right: 3%;
 }
 
 .principal_endereco_texto {
-    float: left;
     background-color: rgb(138, 94, 94);
     color: #FFF;
     width: 47%;
     height: 100%;
     padding: 2%;
-    margin-left: 3%;
     box-sizing: border-box;
 }
 
@@ -171,6 +177,7 @@ h2 {
 }
 
 .principal_formulario {
+    display: flex;
     width: 100%;
     height: 60vh;
     padding: 30px;
@@ -179,7 +186,6 @@ h2 {
 }
 
 .principal_formulario form {
-    float: left;
     width: 47%;
     height: 100%;
     margin-right: 3%;
@@ -215,10 +221,8 @@ h2 {
 }
 
 .principal_formulario_redes-sociais {
-    float: left;
     width: 47%;
-    height: 100%;
-    margin-left: 3%;
+    height: 100%;   
     box-sizing: border-box;
     padding: 15vh 8%;
 }
@@ -246,8 +250,8 @@ h2 {
 
 .rodape {
     width: 100%;
-    height: 20vh;
     padding-top: 2vh;
+    padding-bottom: 2vh;
     text-align: center;
     background-color: #000;
     color: #FFF;
@@ -262,18 +266,130 @@ h2 {
 }
 
 .rodape_lista-redes-sociais {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
-    width: 20%;
+    width: 100%;
+    height: auto;
     margin: 10px auto 0;
 }
 
 .rodape_lista-redes-sociais li {
-    float: left;
-    width: 15%;
-    margin: 0 9% 0;
+    width: 40px;
+    margin: 0 50px 0;
 }
 
 .rodape_lista-redes-sociais li img {
     width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .principal_artigo {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .principal_artigo_sobre {
+        margin: 0 0 50px;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    p:not(.principal_instrumentos_lista_itens p) {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .principal_artigo_sobre, .principal_artigo_imagem {
+        width: 100%;
+    }
+
+    .principal_endereco {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .principal_endereco_texto {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .principal_endereco_mapa {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .cabecalho {
+        height: auto;
+    }
+
+    .principal_artigo {
+        padding: 30px;
+    }
+
+    .principal_artigo_sobre {
+        margin: 0;
+    }
+
+    .principal_artigo_imagem {
+        display: none;
+    }
+
+    .principal_endereco {
+        padding: 30px;
+    }
+
+    .principal_formulario {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .principal_formulario form {
+        width: 100%;
+    }
+
+    .principal_formulario_redes-sociais {
+        width: 100%;
+    }
+
+    .rodape_lista-redes-sociais {
+        justify-content: space-evenly;
+    }
+
+    .rodape_lista-redes-sociais li {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .cabecalho_navegacao {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cabecalho_navegacao_links {
+        margin-bottom: 20px;
+    }
+
+    .principal_artigo {
+        padding: 15px;
+    }
+
+    .principal_instrumentos_lista_itens {
+        margin: 0 0 30px;
+        font-size: 1.6rem;
+    }
 }
