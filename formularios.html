@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./src/css/formularios.css">
+      <title>Formulários</title>
+   </head>
+
+   <body>
+      <form>
+         <fieldset>
+               <legend>Cadastro</legend>
+               <label for="nome">Entre com o seu nome:</label>
+               
+               <input type="text" name="nome" id="nome" maxlength="50" size="50" placeholder="Digite seu nome aqui"/>
+
+               <label for="cpf" style="margin-left: 15px">Entre com o seu CPF:</label>
+               <input type="text" name="cpf" id="cpf" tabindex="1" pattern="regex" placeholder="Digite seu CPF aqui"/> <!-- Pattern Regex serve para criar uma regra nesse input através do JS -->
+               <br><br>
+
+               <label for="email">Entre com o seu e-mail:</label>
+               <input type="e-mail" name="email" id="email" maxlength="30" size="30" placeholder="Digite seu e-mail aqui"/>
+
+               <label for="senha" style="margin-left: 15px">Entre com a sua senha:</label>
+               <input type="password" name="senha" id="senha" size="10" placeholder="Senha"/>
+               <br><br>
+
+               <label for="resposta">Você utiliza nosso site frequentimente?</label>
+               <input type="radio" name="resposta" value="sim" checked/> Sim
+               <input type="radio" name="resposta" value="nao"/> Não
+               <br><br>
+
+               <label>Qual site você costuma usar para acesso ao site?
+                  <label>
+                     <input type="checkbox" name="opcao1" value="firefox"/> Firefox
+                  </label>
+
+                  <label>
+                     <input type="checkbox" name="opcao2" value="chrome"/> Chrome
+                  </label>
+
+                  <label>
+                     <input type="checkbox" name="opcao3" value="edge"/> Edge
+                  </label>
+
+                  <label>
+                     <input type="checkbox" name="opcao4" value="safari"/> Safari
+                  </label>
+
+                  <label>
+                     <input type="checkbox" name="opcao5" value="opera"/> Opera
+                  </label>
+               </label>
+               <br><br>
+
+               <label for="opcao">Selecione uma área de atuação:</label>
+               <select name="opcao" id="opcao">
+                  <option>Administração</option>
+                  <option>Comercial</option>
+                  <option>Marketing</option>
+                  <option>T.I</option>
+                  <option>Vendas</option>
+               </select>
+               <br><br>
+
+               <label for="areatexto">Deixe aqui seu comentário:</label>
+               <br>
+               <textarea name="areatexto" id="areatexto" maxlength="200" cols="50" rows="6" placeholder="Comentário"></textarea>
+               <br><br>
+
+               <label>
+                  Entre com um número:
+                  <input type="number" min="10" max="20"/>
+                  <br><br>
+               </label>
+
+               <label>
+                  Selecione uma data:
+                  <input type="date"/>
+               </label>
+               <br><br>
+
+               <progress value="30" max="100">30%</progress> <!-- Barra de progressão que funciona melhor no JS -->
+               <br><br>
+
+               <meter min="0" max="100" low="40" high="90" optimum="100" value="60">
+                  <!-- Ajuda a determinar a qualidade de um valor, como uma senha fraca ou forte -->
+               </meter>
+               <br><br>
+
+               <input type="search" url="#"/>
+               <br><br>
+
+               <label>
+                  Escolha sua cor:
+                  <input type="color"/>
+               </label>
+               <br><br>
+
+               <input type="submit" value="Enviar"/>
+               <input type="reset" value="Limpar campos" style="margin-left: 5px;"/>
+         </fieldset>
+      </form>
+   </body>
+</html>
