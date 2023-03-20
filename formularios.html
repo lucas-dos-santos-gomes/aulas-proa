@@ -9,22 +9,22 @@
    </head>
 
    <body>
-      <form>
+      <form action="">
          <fieldset>
                <legend>Cadastro</legend>
                <label for="nome">Entre com o seu nome:</label>
                
-               <input type="text" name="nome" id="nome" maxlength="50" size="50" placeholder="Digite seu nome aqui"/>
+               <input type="text" name="nome" id="nome" tabindex="2" maxlength="50" size="50" placeholder="Digite seu nome aqui" required/>
 
                <label for="cpf" style="margin-left: 15px">Entre com o seu CPF:</label>
-               <input type="text" name="cpf" id="cpf" tabindex="1" pattern="regex" placeholder="Digite seu CPF aqui"/> <!-- Pattern Regex serve para criar uma regra nesse input através do JS -->
+               <input type="text" name="cpf" id="cpf" tabindex="1" pattern="regex" placeholder="Digite seu CPF aqui" required/> <!-- Pattern Regex serve para criar uma regra nesse input através do JS -->
                <br><br>
 
                <label for="email">Entre com o seu e-mail:</label>
-               <input type="e-mail" name="email" id="email" maxlength="30" size="30" placeholder="Digite seu e-mail aqui"/>
+               <input type="e-mail" name="email" id="email" tabindex="3" maxlength="30" size="30" placeholder="Digite seu e-mail aqui" required/>
 
                <label for="senha" style="margin-left: 15px">Entre com a sua senha:</label>
-               <input type="password" name="senha" id="senha" size="10" placeholder="Senha"/>
+               <input type="password" name="senha" id="senha" tabindex="4" size="10" placeholder="Senha" required/>
                <br><br>
 
                <label for="resposta">Você utiliza nosso site frequentimente?</label>
